@@ -1,0 +1,16 @@
+<a routerLink="login">Login</a><br>
+<a routerLink="register">Register</a><br>
+
+
+
+<div *ngFor="let post of posts">
+    Categorty: <h2>{{post.category.title}}</h2><br/>
+
+    <h3>{{ post.title }}</h3><br/>
+    <p>{{ post.description }}</p>
+    <img src={{post.post_img_complete}} width="500px"  ><br/>
+    created By :<p style="color:rosybrown" >{{post.user.first_name}} {{post.user.last_name}}</p>
+    <br>
+    Post Rating <p style="color: green">{{post.averageRating}}</p>
+  </div>
+  
